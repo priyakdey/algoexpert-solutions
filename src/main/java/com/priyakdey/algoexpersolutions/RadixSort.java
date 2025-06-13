@@ -19,8 +19,8 @@ public class RadixSort {
         int length = array.size();
         if (length < 2) return array;
 
-        int maxElement = array.get(0);
-        int minElement = array.get(0);
+        int maxElement = array.getFirst();
+        int minElement = array.getFirst();
         for (int num : array) {
             maxElement = Math.max(maxElement, num);
             minElement = Math.min(minElement, num);
